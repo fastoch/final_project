@@ -1,6 +1,27 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+
+/* || RESET */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Make the images responsive */
+img {
+  display: block; /* gets rid of that minimal little space below images, since they are inline elements */
+  max-width: 100%;
+  height: auto;
+}
+
+/* The form elements don't inherit font properties */
+input, 
+button, 
+textarea {
+  font: inherit;
+}
+
+
+/* || VARIABLES */
