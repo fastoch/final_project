@@ -47,6 +47,8 @@ textarea {
   --HEADER-BGCOLOR: black;
   --HEADER-COLOR: white;
   --NAV-BGCOLOR: white;
+  --HERO-BGCOLOR: rgba(51, 178, 51, 0.75); 
+  --HERO-COLOR: white;
 
   /* BORDERS */
   --BORDERS: 1px solid var(--BORDER-COLOR);
@@ -155,4 +157,18 @@ a:active {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
+}
+
+
+/* || HERO */
+
+.hero {
+  position: relative; /* we're going to place something absolute inside of that hero section */
+}
+
+.hero__h2 {
+  background-color: var(--HERO-BGCOLOR);
+  color: var(--HERO-COLOR);
+  padding: 0.25em 0.5em;
+  text-shadow: 2px 2px 5px var(--BORDER-COLOR); /* x-offset y-offset blur color */
 }
