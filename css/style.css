@@ -171,9 +171,27 @@ a:active {
   color: var(--HERO-COLOR);
   padding: 0.25em 0.5em;
   text-shadow: 2px 2px 5px var(--BORDER-COLOR); /* x-offset y-offset blur color */
-  position: absolute; /* removes h2 from the flow, like it's floating above the page + its width fits its content */
+  position: absolute; /* removes h2 from the flow of the page + its width fits its content */
   top: -100px; /* h2 disappears but will be animated to reappear */
   left: 20px;
+  animation: showWelcome 0.5s ease-in-out 1s forwards; 
+  /* animation syntax: name duration timing-function delay final-state */
+  /* forwards = keep the state of when the animation ends */
 }
 
-@keyframes
+@keyframes showWelcome {
+  0% {
+    top: -20px;
+    transform: skew(0deg, -5deg) scaleY(0);
+  }
+
+  80% {
+    top: 30px;
+    transform: skew(10deg, -5deg) scaleY(1.2);
+  }
+
+  100% {
+    top: 20px;
+    transform: skew(-10deg, -5deg) scaleY(1);
+  }
+}
