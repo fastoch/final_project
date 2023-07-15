@@ -171,4 +171,9 @@ a:active {
   color: var(--HERO-COLOR);
   padding: 0.25em 0.5em;
   text-shadow: 2px 2px 5px var(--BORDER-COLOR); /* x-offset y-offset blur color */
+  position: absolute; /* removes h2 from the flow, like it's floating above the page + its width fits its content */
+  top: -100px; /* h2 disappears but will be animated to reappear */
+  left: 20px;
 }
+
+@keyframes
