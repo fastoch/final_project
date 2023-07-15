@@ -110,9 +110,9 @@ a:hover,
 a:focus-visible {
   color: var(--LINK-HOVER);
 }
-
 /* https://bitsofco.de/when-is-focus-visible-visible/ */
 
 a:active {
   color: var(--LINK-ACTIVE);
 }
+
