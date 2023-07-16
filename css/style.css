@@ -34,22 +34,22 @@ textarea {
   --FS: clamp(1rem, 2.2vh, 1.5rem); /* font-size */
 
   /* COLORS */
-  --BGCOLOR: orange; 
   --BGCOLOR-FADE: rgb(252, 220, 160);
+  --BGCOLOR: orange; 
   --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
   --BODY-BGCOLOR: #FFF;
-  --FONT-COLOR: #000;
   --BORDER-COLOR: #333;
-  --HIGHLIGHT-COLOR: rgb(51, 178, 51);
-  --LINK-COLOR: #000;
-  --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-  --LINK-ACTIVE: orange;
+  --BUTTON-COLOR: #fff;
+  --FONT-COLOR: #000;
   --HEADER-BGCOLOR: black;
   --HEADER-COLOR: white;
-  --NAV-BGCOLOR: white;
   --HERO-BGCOLOR: rgba(51, 178, 51, 0.75); 
   --HERO-COLOR: white;
-  --BUTTON-COLOR: #fff;
+  --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+  --LINK-ACTIVE: orange;
+  --LINK-COLOR: #000;
+  --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
+  --NAV-BGCOLOR: white;
 
   /* BORDERS */
   --BORDERS: 1px solid var(--BORDER-COLOR);
