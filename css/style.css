@@ -49,6 +49,7 @@ textarea {
   --NAV-BGCOLOR: white;
   --HERO-BGCOLOR: rgba(51, 178, 51, 0.75); 
   --HERO-COLOR: white;
+  --BUTTON-COLOR: #fff;
 
   /* BORDERS */
   --BORDERS: 1px solid var(--BORDER-COLOR);
@@ -60,6 +61,25 @@ textarea {
 
   /* STANDARD MARGIN */
   --MARGIN: clamp(1em, 2.5vh, 1.5em) 0; /* clamp for top & bottom, zero for left & right */
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --BGCOLOR: black;
+    --BGCOLOR-FADE: gray;
+    --HEADER-COLOR: whitesmoke;
+    --NAV-BGCOLOR: rgb(20, 20, 20);
+    --HERO-COLOR: #333;
+    --BODY-BGCOLOR: #333;
+    --FONT-COLOR: whitesmoke;
+    --HIGHLIGHT-COLOR: whitesmoke;
+    --BORDER-COLOR: whitesmoke;
+    --LINK-COLOR: whitesmoke;
+    --LINK-HOVER: orange;
+    --LINK-ACTIVE: rgb(252, 200, 103);
+    --BUTTON-COLOR: #000;
+  }
 }
 
 
@@ -276,7 +296,7 @@ a:active {
   padding: 0.5em;
   border-radius: var(--BORDER-RADIUS);
   background-color: var(--HIGHLIGHT-COLOR);
-  color: var(--HEADER-COLOR);
+  color: var(--BUTTON-COLOR);
 }
 
 
